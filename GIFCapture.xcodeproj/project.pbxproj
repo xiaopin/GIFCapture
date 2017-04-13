@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120207341E9F129900EB4ABA /* XPGIFGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 120207331E9F129900EB4ABA /* XPGIFGenerator.m */; };
+		12135AF51E8B44A500A201C2 /* XPScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */; };
+		121C117D1E9DB323008AB02D /* Image+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C117C1E9DB323008AB02D /* Image+Snapshot.m */; };
+		12A66CA01E8A45EF008807D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66C9F1E8A45EF008807D9 /* AppDelegate.m */; };
+		12A66CA31E8A45EF008807D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66CA21E8A45EF008807D9 /* main.m */; };
+		12A66CA81E8A45EF008807D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A66CA71E8A45EF008807D9 /* Assets.xcassets */; };
+		12A66CAB1E8A45EF008807D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A66CA91E8A45EF008807D9 /* Main.storyboard */; };
+		12A66CB61E8A4643008807D9 /* NSWindow+XP.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66CB51E8A4643008807D9 /* NSWindow+XP.m */; };
+		12A66CBB1E8A4687008807D9 /* XPWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66CBA1E8A4687008807D9 /* XPWindowController.m */; };
+		12A66CC11E8A47D7008807D9 /* XPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66CC01E8A47D7008807D9 /* XPHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		120207321E9F129900EB4ABA /* XPGIFGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPGIFGenerator.h; sourceTree = "<group>"; };
+		120207331E9F129900EB4ABA /* XPGIFGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPGIFGenerator.m; sourceTree = "<group>"; };
+		12135AF31E8B44A500A201C2 /* XPScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPScreenRecorder.h; sourceTree = "<group>"; };
+		12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPScreenRecorder.m; sourceTree = "<group>"; };
+		121C117C1E9DB323008AB02D /* Image+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Image+Snapshot.m"; sourceTree = "<group>"; };
+		121C117E1E9DB338008AB02D /* Image+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Image+Snapshot.h"; sourceTree = "<group>"; };
+		12A66C9B1E8A45EF008807D9 /* GIFCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A66C9E1E8A45EF008807D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12A66C9F1E8A45EF008807D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12A66CA21E8A45EF008807D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12A66CA71E8A45EF008807D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12A66CAA1E8A45EF008807D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12A66CAC1E8A45EF008807D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A66CB41E8A4643008807D9 /* NSWindow+XP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+XP.h"; sourceTree = "<group>"; };
+		12A66CB51E8A4643008807D9 /* NSWindow+XP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+XP.m"; sourceTree = "<group>"; };
+		12A66CB91E8A4687008807D9 /* XPWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPWindowController.h; sourceTree = "<group>"; };
+		12A66CBA1E8A4687008807D9 /* XPWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPWindowController.m; sourceTree = "<group>"; };
+		12A66CBF1E8A47D7008807D9 /* XPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHomeViewController.h; sourceTree = "<group>"; };
+		12A66CC01E8A47D7008807D9 /* XPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHomeViewController.m; sourceTree = "<group>"; };
+		967BD53C8F684475E58963B6 /* Pods-GIFCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIFCapture/Pods-GIFCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		A132A35C258AF996746BEB3F /* Pods-GIFCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFCapture/Pods-GIFCapture.release.xcconfig"; sourceTree = "<group>"; };
+		B53A39EAFCA9D16CE0B6694B /* libPods-GIFCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12A66C981E8A45EF008807D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A66C921E8A45EF008807D9 = {
+			isa = PBXGroup;
+			children = (
+				12A66C9D1E8A45EF008807D9 /* GIFCapture */,
+				12A66C9C1E8A45EF008807D9 /* Products */,
+				58E76C4DCCC536ECD51FBE3B /* Pods */,
+				DCE800A6308C96964E5A363E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		12A66C9C1E8A45EF008807D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12A66C9B1E8A45EF008807D9 /* GIFCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12A66C9D1E8A45EF008807D9 /* GIFCapture */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CB21E8A4630008807D9 /* Helpers */,
+				12A66CB71E8A4672008807D9 /* Home */,
+				12A66C9E1E8A45EF008807D9 /* AppDelegate.h */,
+				12A66C9F1E8A45EF008807D9 /* AppDelegate.m */,
+				12A66CA71E8A45EF008807D9 /* Assets.xcassets */,
+				12A66CA91E8A45EF008807D9 /* Main.storyboard */,
+				12A66CAC1E8A45EF008807D9 /* Info.plist */,
+				12A66CA11E8A45EF008807D9 /* Supporting Files */,
+			);
+			path = GIFCapture;
+			sourceTree = "<group>";
+		};
+		12A66CA11E8A45EF008807D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CA21E8A45EF008807D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12A66CB21E8A4630008807D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CB31E8A4630008807D9 /* Category */,
+				12135AF31E8B44A500A201C2 /* XPScreenRecorder.h */,
+				12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */,
+				120207321E9F129900EB4ABA /* XPGIFGenerator.h */,
+				120207331E9F129900EB4ABA /* XPGIFGenerator.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		12A66CB31E8A4630008807D9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CB41E8A4643008807D9 /* NSWindow+XP.h */,
+				12A66CB51E8A4643008807D9 /* NSWindow+XP.m */,
+				121C117E1E9DB338008AB02D /* Image+Snapshot.h */,
+				121C117C1E9DB323008AB02D /* Image+Snapshot.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		12A66CB71E8A4672008807D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CB81E8A4672008807D9 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		12A66CB81E8A4672008807D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12A66CB91E8A4687008807D9 /* XPWindowController.h */,
+				12A66CBA1E8A4687008807D9 /* XPWindowController.m */,
+				12A66CBF1E8A47D7008807D9 /* XPHomeViewController.h */,
+				12A66CC01E8A47D7008807D9 /* XPHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58E76C4DCCC536ECD51FBE3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				967BD53C8F684475E58963B6 /* Pods-GIFCapture.debug.xcconfig */,
+				A132A35C258AF996746BEB3F /* Pods-GIFCapture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCE800A6308C96964E5A363E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B53A39EAFCA9D16CE0B6694B /* libPods-GIFCapture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12A66C9A1E8A45EF008807D9 /* GIFCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A66CAF1E8A45EF008807D9 /* Build configuration list for PBXNativeTarget "GIFCapture" */;
+			buildPhases = (
+				12A66C971E8A45EF008807D9 /* Sources */,
+				12A66C981E8A45EF008807D9 /* Frameworks */,
+				12A66C991E8A45EF008807D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFCapture;
+			productName = GIFCapture;
+			productReference = 12A66C9B1E8A45EF008807D9 /* GIFCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12A66C931E8A45EF008807D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XP;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = xiaopin;
+				TargetAttributes = {
+					12A66C9A1E8A45EF008807D9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 12A66C961E8A45EF008807D9 /* Build configuration list for PBXProject "GIFCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12A66C921E8A45EF008807D9;
+			productRefGroup = 12A66C9C1E8A45EF008807D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12A66C9A1E8A45EF008807D9 /* GIFCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12A66C991E8A45EF008807D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A66CA81E8A45EF008807D9 /* Assets.xcassets in Resources */,
+				12A66CAB1E8A45EF008807D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12A66C971E8A45EF008807D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A66CB61E8A4643008807D9 /* NSWindow+XP.m in Sources */,
+				12A66CA31E8A45EF008807D9 /* main.m in Sources */,
+				12A66CA01E8A45EF008807D9 /* AppDelegate.m in Sources */,
+				12135AF51E8B44A500A201C2 /* XPScreenRecorder.m in Sources */,
+				121C117D1E9DB323008AB02D /* Image+Snapshot.m in Sources */,
+				120207341E9F129900EB4ABA /* XPGIFGenerator.m in Sources */,
+				12A66CC11E8A47D7008807D9 /* XPHomeViewController.m in Sources */,
+				12A66CBB1E8A4687008807D9 /* XPWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12A66CA91E8A45EF008807D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A66CAA1E8A45EF008807D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12A66CAD1E8A45EF008807D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		12A66CAE1E8A45EF008807D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		12A66CB01E8A45EF008807D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967BD53C8F684475E58963B6 /* Pods-GIFCapture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GIFCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0daybug.GIFCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12A66CB11E8A45EF008807D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A132A35C258AF996746BEB3F /* Pods-GIFCapture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GIFCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.0daybug.GIFCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A66C961E8A45EF008807D9 /* Build configuration list for PBXProject "GIFCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A66CAD1E8A45EF008807D9 /* Debug */,
+				12A66CAE1E8A45EF008807D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A66CAF1E8A45EF008807D9 /* Build configuration list for PBXNativeTarget "GIFCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A66CB01E8A45EF008807D9 /* Debug */,
+				12A66CB11E8A45EF008807D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12A66C931E8A45EF008807D9 /* Project object */;
+}
