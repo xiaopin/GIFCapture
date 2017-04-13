@@ -10,10 +10,11 @@
 #import "NSWindow+XP.h"
 #import "XPScreenRecorder.h"
 #import "XPGIFGenerator.h"
+#import "XPNumberFormatter.h"
 
 #define USER_NOTIFICATION_SAVE_URL_KEY  @"kSaveURLKey"
 
-@interface XPHomeViewController ()<NSUserNotificationCenterDelegate>
+@interface XPHomeViewController ()<NSUserNotificationCenterDelegate,NSTextFieldDelegate>
 
 @property (weak) IBOutlet NSBox *bottomBox;
 @property (weak) IBOutlet NSTextField *widthTextField;
@@ -32,7 +33,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    // 限制NSTextField只能输入数字
+    self.widthTextField.formatter = [[XPNumberFormatter alloc] init];
+    self.heightTextField.formatter = [[XPNumberFormatter alloc] init];
 }
 
 - (void)viewDidLayout {
@@ -40,6 +43,10 @@
     NSRect recordRect = [self recordRect];
     self.widthTextField.stringValue = [NSString stringWithFormat:@"%.f", recordRect.size.width];
     self.heightTextField.stringValue = [NSString stringWithFormat:@"%.f", recordRect.size.height];
+}
+
+- (void)mouseDown:(NSEvent *)event {
+    [self.view.window endEditingFor:nil];
 }
 
 #pragma mark - <NSUserNotificationCenterDelegate>
@@ -54,6 +61,35 @@
         NSURL *saveURL = [NSURL URLWithString:savePath];
         [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[saveURL]];
     }
+}
+
+#pragma mark - <NSTextFieldDelegate>
+
+- (void)controlTextDidChange:(NSNotification *)obj {
+    NSTextField *textField = (NSTextField *)obj.object;
+    CGSize maxSize = [NSScreen mainScreen].visibleFrame.size;
+    NSRect rect = self.view.window.frame;
+    if (textField == self.widthTextField) {
+        CGFloat width = [textField.stringValue floatValue] + self.view.layer.borderWidth*2;
+        rect.size.width = MAX(self.view.window.minSize.width, MIN(maxSize.width, width));
+    } else if (textField == self.heightTextField) {
+        CGFloat height = [textField.stringValue floatValue];
+        rect.size.height = MAX(self.view.window.minSize.height, MIN(maxSize.height, height));
+    } else {
+        return;
+    }
+    [self.view.window setFrame:rect display:YES];
+    
+    NSRect screenFrame = [[NSScreen mainScreen] frame];
+    if (!CGRectContainsRect(screenFrame, rect)) {
+        [self.view.window center];
+    }
+}
+
+- (void)controlTextDidEndEditing:(NSNotification *)obj {
+    NSRect rect = [self recordRect];
+    self.widthTextField.stringValue = [NSString stringWithFormat:@"%.f", rect.size.width];
+    self.heightTextField.stringValue = [NSString stringWithFormat:@"%.f", rect.size.height];
 }
 
 #pragma mark - Actions

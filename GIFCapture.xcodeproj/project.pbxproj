@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		120207341E9F129900EB4ABA /* XPGIFGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 120207331E9F129900EB4ABA /* XPGIFGenerator.m */; };
+		120207371E9F67D500EB4ABA /* XPNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 120207361E9F67D500EB4ABA /* XPNumberFormatter.m */; };
 		12135AF51E8B44A500A201C2 /* XPScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */; };
 		121C117D1E9DB323008AB02D /* Image+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C117C1E9DB323008AB02D /* Image+Snapshot.m */; };
 		12A66CA01E8A45EF008807D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66C9F1E8A45EF008807D9 /* AppDelegate.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		120207321E9F129900EB4ABA /* XPGIFGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPGIFGenerator.h; sourceTree = "<group>"; };
 		120207331E9F129900EB4ABA /* XPGIFGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPGIFGenerator.m; sourceTree = "<group>"; };
+		120207351E9F67D500EB4ABA /* XPNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNumberFormatter.h; sourceTree = "<group>"; };
+		120207361E9F67D500EB4ABA /* XPNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNumberFormatter.m; sourceTree = "<group>"; };
 		12135AF31E8B44A500A201C2 /* XPScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPScreenRecorder.h; sourceTree = "<group>"; };
 		12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPScreenRecorder.m; sourceTree = "<group>"; };
 		121C117C1E9DB323008AB02D /* Image+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Image+Snapshot.m"; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */,
 				120207321E9F129900EB4ABA /* XPGIFGenerator.h */,
 				120207331E9F129900EB4ABA /* XPGIFGenerator.m */,
+				120207351E9F67D500EB4ABA /* XPNumberFormatter.h */,
+				120207361E9F67D500EB4ABA /* XPNumberFormatter.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				121C117D1E9DB323008AB02D /* Image+Snapshot.m in Sources */,
 				120207341E9F129900EB4ABA /* XPGIFGenerator.m in Sources */,
 				12A66CC11E8A47D7008807D9 /* XPHomeViewController.m in Sources */,
+				120207371E9F67D500EB4ABA /* XPNumberFormatter.m in Sources */,
 				12A66CBB1E8A4687008807D9 /* XPWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

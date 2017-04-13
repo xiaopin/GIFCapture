@@ -227,21 +227,21 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box boxType="custom" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="SJS-lt-yQQ">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
+                                <rect key="frame" x="0.0" y="4" width="480" height="30"/>
                                 <view key="contentView" id="p8y-ee-cKQ">
-                                    <rect key="frame" x="1" y="1" width="478" height="38"/>
+                                    <rect key="frame" x="1" y="1" width="478" height="28"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-M0-Lni">
-                                            <rect key="frame" x="18" y="10" width="34" height="17"/>
+                                            <rect key="frame" x="18" y="5" width="34" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Size:" id="nqI-YT-cKc">
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField toolTip="Width" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-1N-NdF">
-                                            <rect key="frame" x="60" y="8" width="60" height="22"/>
+                                            <rect key="frame" x="60" y="3" width="60" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="8y6-rh-zoT"/>
                                             </constraints>
@@ -250,31 +250,37 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="GMS-qo-vRb"/>
+                                            </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agS-BR-Efm">
-                                            <rect key="frame" x="120" y="10" width="20" height="17"/>
+                                            <rect key="frame" x="120" y="5" width="20" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="TSs-9e-en2"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="x" drawsBackground="YES" id="exZ-8q-mJr">
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField toolTip="Height" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8v-L0-jQn">
-                                            <rect key="frame" x="140" y="8" width="60" height="22"/>
+                                            <rect key="frame" x="140" y="3" width="60" height="22"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ysv-TN-cKb">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="d7b-fn-Gll"/>
+                                            </connections>
                                         </textField>
                                         <button toolTip="Start Capture" translatesAutoresizingMaskIntoConstraints="NO" id="nR6-wX-dwO">
-                                            <rect key="frame" x="428" y="4" width="30" height="30"/>
+                                            <rect key="frame" x="430" y="0.0" width="28" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="RxT-rl-2JK"/>
-                                                <constraint firstAttribute="width" constant="30" id="fY1-cC-Nf2"/>
+                                                <constraint firstAttribute="height" constant="28" id="RxT-rl-2JK"/>
+                                                <constraint firstAttribute="width" constant="28" id="fY1-cC-Nf2"/>
                                             </constraints>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="start" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xQJ-oc-Y3J">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -300,9 +306,10 @@
                                     </constraints>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="P5B-tP-qx9"/>
+                                    <constraint firstAttribute="height" constant="30" id="P5B-tP-qx9"/>
                                 </constraints>
-                                <color key="fillColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" red="0.99108225107192993" green="0.25602331757545471" blue="0.0077431066893041134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <box hidden="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xbD-MI-Upl">
                                 <rect key="frame" x="190" y="85" width="100" height="100"/>
@@ -331,7 +338,7 @@
                             <constraint firstItem="xbD-MI-Upl" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="4YA-Se-sQZ"/>
                             <constraint firstItem="SJS-lt-yQQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="IFz-IC-CNy"/>
                             <constraint firstAttribute="trailing" secondItem="SJS-lt-yQQ" secondAttribute="trailing" id="dGc-xl-TqE"/>
-                            <constraint firstAttribute="bottom" secondItem="SJS-lt-yQQ" secondAttribute="bottom" id="stk-nN-wXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="SJS-lt-yQQ" secondAttribute="bottom" constant="4" id="stk-nN-wXJ"/>
                         </constraints>
                     </view>
                     <connections>
