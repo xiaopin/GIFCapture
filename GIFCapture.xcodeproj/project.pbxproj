@@ -11,6 +11,7 @@
 		120207371E9F67D500EB4ABA /* XPNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 120207361E9F67D500EB4ABA /* XPNumberFormatter.m */; };
 		12135AF51E8B44A500A201C2 /* XPScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */; };
 		121C117D1E9DB323008AB02D /* Image+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C117C1E9DB323008AB02D /* Image+Snapshot.m */; };
+		122E26231EA057BC00536AF6 /* XPConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122E26221EA057BC00536AF6 /* XPConvertViewController.m */; };
 		12A66CA01E8A45EF008807D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66C9F1E8A45EF008807D9 /* AppDelegate.m */; };
 		12A66CA31E8A45EF008807D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A66CA21E8A45EF008807D9 /* main.m */; };
 		12A66CA81E8A45EF008807D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A66CA71E8A45EF008807D9 /* Assets.xcassets */; };
@@ -29,6 +30,8 @@
 		12135AF41E8B44A500A201C2 /* XPScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPScreenRecorder.m; sourceTree = "<group>"; };
 		121C117C1E9DB323008AB02D /* Image+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Image+Snapshot.m"; sourceTree = "<group>"; };
 		121C117E1E9DB338008AB02D /* Image+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Image+Snapshot.h"; sourceTree = "<group>"; };
+		122E26211EA057BC00536AF6 /* XPConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPConvertViewController.h; sourceTree = "<group>"; };
+		122E26221EA057BC00536AF6 /* XPConvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPConvertViewController.m; sourceTree = "<group>"; };
 		12A66C9B1E8A45EF008807D9 /* GIFCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A66C9E1E8A45EF008807D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12A66C9F1E8A45EF008807D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122E261F1EA0579D00536AF6 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				122E26201EA0579D00536AF6 /* Controller */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		122E26201EA0579D00536AF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				122E26211EA057BC00536AF6 /* XPConvertViewController.h */,
+				122E26221EA057BC00536AF6 /* XPConvertViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		12A66C921E8A45EF008807D9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +99,7 @@
 		12A66C9D1E8A45EF008807D9 /* GIFCapture */ = {
 			isa = PBXGroup;
 			children = (
+				122E261F1EA0579D00536AF6 /* Convert */,
 				12A66CB21E8A4630008807D9 /* Helpers */,
 				12A66CB71E8A4672008807D9 /* Home */,
 				12A66C9E1E8A45EF008807D9 /* AppDelegate.h */,
@@ -231,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122E26231EA057BC00536AF6 /* XPConvertViewController.m in Sources */,
 				12A66CB61E8A4643008807D9 /* NSWindow+XP.m in Sources */,
 				12A66CA31E8A45EF008807D9 /* main.m in Sources */,
 				12A66CA01E8A45EF008807D9 /* AppDelegate.m in Sources */,
