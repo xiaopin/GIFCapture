@@ -8,11 +8,14 @@
 
 #import "XPConvertViewController.h"
 #import "XPGIFGenerator.h"
+#import "XPVideoDragView.h"
 
 @interface XPConvertViewController ()
 
 @property (weak) IBOutlet NSTextField *videoTextField;
 @property (weak) IBOutlet NSTextField *savepathTextField;
+/// 用于文件拖拽功能的视图
+@property (weak) IBOutlet XPVideoDragView *videoDragView;
 /// 需要转换的视频URL
 @property (nonatomic, strong) NSURL *videoURL;
 /// 生成的GIF保存URL
@@ -26,7 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    __weak __typeof(self) weakSelf = self;
+    [self.videoDragView setDidDraggingVideoFile:^(NSURL *videoURL) {
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        if (nil == strongSelf) return;
+        strongSelf.videoTextField.stringValue = [videoURL path];
+        strongSelf.videoURL = videoURL;
+    }];
 }
 
 #pragma mark - Actions
@@ -92,6 +101,12 @@
         [data writeToURL:strongSelf.gifURL atomically:YES];
         [[NSFileManager defaultManager] removeItemAtURL:gifURL error:nil];
         [strongSelf.view.window endSheet:hudPanel];
+        
+        // clear
+        strongSelf.videoTextField.stringValue = @"";
+        strongSelf.savepathTextField.stringValue = @"";
+        strongSelf.videoURL = nil;
+        strongSelf.gifURL = nil;
     }];
 }
 
